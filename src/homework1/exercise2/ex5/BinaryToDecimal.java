@@ -1,11 +1,10 @@
+package homework1.exercise2.ex5;
+
 import java.util.Scanner;
 
-public class Hello {
+public class BinaryToDecimal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double a = 5;
-        double b = 3;
-        System.out.println((a / b));
         System.out.print("Enter a binary number: ");
         String binaryString = scanner.nextLine();
 
@@ -20,7 +19,6 @@ public class Hello {
             int digit = Character.getNumericValue(binaryString.charAt(i));
             decimal = decimal * 2 + digit;
         }
-
         return decimal;
     }
 }
